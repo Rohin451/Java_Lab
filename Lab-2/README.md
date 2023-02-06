@@ -6,6 +6,8 @@ You are supposed to create a menu-driven program that has the following menu opt
 
 Note:
 The menu-driven program has to be made with the help of a do-while loop and switch-case statements.
+
+
 Constraints:
 1.The names collected must be stored in an array with a max length of 1024.
 2.The names in the array should be UNIQUE; no duplicate entries are expected!
