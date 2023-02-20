@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lab4{
+public class Bank{
     // Global variables
     static int accountNumber;
     static String accountHolderName;
@@ -9,7 +9,7 @@ public class Lab4{
     static int transactionCount = 0;
 
     // Function to initialize the customer
-    public static void initializeCustomer() {
+    public static void initialize() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter account number: ");
         accountNumber = scanner.nextInt();
@@ -21,7 +21,7 @@ public class Lab4{
     }
 
     // Function to deposit money
-    public static void depositMoney() {
+    public static void deposit() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter amount to deposit: ");
         double amount = scanner.nextDouble();
@@ -31,7 +31,7 @@ public class Lab4{
     }
 
     // Function to withdraw money
-    public static void withdrawMoney() {
+    public static void withdraw() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter amount to withdraw: ");
         double amount = scanner.nextDouble();
@@ -82,7 +82,7 @@ public class Lab4{
     
             switch (choice) {
                 case 1:
-                    initializeCustomer();
+                    initialize();
                     isInitialized = true;
                     break;
                 case 2:
@@ -90,14 +90,14 @@ public class Lab4{
                         System.out.println("Please initialize customer first!");
                         break;
                     }
-                    depositMoney();
+                    deposit();
                     break;
                 case 3:
                     if (!isInitialized) {
                         System.out.println("Please initialize customer first!");
                         break;
                     }
-                    withdrawMoney();
+                    withdraw();
                     break;
                 case 4:
                     if (!isInitialized) {
