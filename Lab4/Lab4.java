@@ -66,7 +66,7 @@ public class Bank{
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int choice;
+        int choice,i=0,j=0;
         boolean isInitialized = false;
         do {
             System.out.println("\nBank Account Menu:");
@@ -91,6 +91,7 @@ public class Bank{
                         break;
                     }
                     deposit();
+                    i=i+1;
                     break;
                 case 3:
                     if (!isInitialized) {
@@ -98,6 +99,7 @@ public class Bank{
                         break;
                     }
                     withdraw();
+                    j=j+1;
                     break;
                 case 4:
                     if (!isInitialized) {
@@ -105,6 +107,8 @@ public class Bank{
                         break;
                     }
                     printTransactions();
+                    System.out.println("Number Of Deposits: "+i);
+                    System.out.println("Number Of Withdrawals: "+j);
                     break;
                 case 5:
                     if (!isInitialized) {
