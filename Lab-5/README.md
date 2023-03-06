@@ -1,8 +1,11 @@
 Below is an encryption/decryption standard in which the letters in the message will be replaced with the letters in the cypher row
 
 Plain
+
 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
 Cypher
+
 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W
 
 Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
